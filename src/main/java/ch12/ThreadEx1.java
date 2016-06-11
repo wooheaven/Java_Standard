@@ -3,9 +3,9 @@ package ch12;
 public class ThreadEx1 {
 
     public static void main(String[] args) {
-        MyThread t1 = new MyThread("t1");
+        MyThread1 t1 = new MyThread1("t1");
 
-        Runnable r = new MyRunnable();
+        Runnable r = new MyRunnable2();
         Thread t2 = new Thread(r,"t2");
 
         t1.start();
@@ -14,8 +14,8 @@ public class ThreadEx1 {
 
 }
 
-class MyThread extends Thread {
-    public MyThread(String threadName) {
+class MyThread1 extends Thread {
+    public MyThread1(String threadName) {
         setName(threadName);
     }
 
@@ -26,7 +26,7 @@ class MyThread extends Thread {
     }
 }
 
-class MyRunnable implements Runnable {
+class MyRunnable2 implements Runnable {
     @Override
     public void run() {
         // TODO Auto-generated method stub
