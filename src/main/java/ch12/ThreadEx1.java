@@ -5,7 +5,7 @@ public class ThreadEx1 {
     public static void main(String[] args) {
         MyThread1 t1 = new MyThread1("t1");
 
-        Runnable r = new MyRunnable2();
+        Runnable r = new MyRunnable1();
         Thread t2 = new Thread(r,"t2");
 
         t1.start();
@@ -26,7 +26,7 @@ class MyThread1 extends Thread {
     }
 }
 
-class MyRunnable2 implements Runnable {
+class MyRunnable1 implements Runnable {
     @Override
     public void run() {
         // TODO Auto-generated method stub

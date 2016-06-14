@@ -2,12 +2,12 @@ package ch12;
 
 class ThreadEx2 {
     public static void main(String[] args) throws Exception {
-        MyThread3 t = new MyThread3();
+        MyThread2 t = new MyThread2();
         t.start();
     }
 }
 
-class MyThread3 extends Thread {
+class MyThread2 extends Thread {
     public void run() {
         throwException();
     }
