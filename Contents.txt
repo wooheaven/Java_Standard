@@ -1,0 +1,6 @@
+Chapter 12 thread
+12.1 process and thread
+12.2 execute and implement of thread
+12.3 start() and run()
+12.4 single thread and multi thread
+12.5 priority of thread
