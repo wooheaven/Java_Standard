@@ -6,3 +6,4 @@ Chapter 12 thread
 12.5 priority of thread
 12.6 thread group
 12.7 daemon thread
+12.8 control thread
